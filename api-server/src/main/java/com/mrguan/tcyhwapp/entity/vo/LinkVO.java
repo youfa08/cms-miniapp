@@ -11,7 +11,6 @@ import lombok.NoArgsConstructor;
  * @date 2020/11/2
  */
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
 public class LinkVO {
     private String type = "article";

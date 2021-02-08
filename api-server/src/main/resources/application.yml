@@ -3,8 +3,8 @@ server:
 wx:
   miniapp:
     configs:
-      - appid: APPID
-        secret: SEECRET
+      - appid: wx7577090a14fc236c
+        secret: 1e5f3dc4eeac72c70f085fa243fcbf48
         token: #微信小程序消息服务器配置的token
         aesKey: #微信小程序消息服务器配置的EncodingAESKey
         msgDataFormat: JSON
@@ -17,15 +17,15 @@ spring:
       indent_output: true
   datasource:
     url: jdbc:mysql://127.0.0.1:3306/miniapp?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&failOverReadOnly=false
-    username: miniapp
-    password: 数据库密码
+    username: root
+    password: neusoft600718
     driver-class-name: com.mysql.cj.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
     druid:
       # 连接池的配置信息
       # 初始化大小，最小，最大
-      initial-size: 1
-      min-idle: 1
+      initial-size: 5
+      min-idle: 5
       maxActive: 20
       # 配置获取连接等待超时的时间
       maxWait: 60000
@@ -50,10 +50,10 @@ spring:
         config:
           enabled: true
   redis:
-    host: 127.0.0.1
+    host: 192.168.17.130
     #    host: 47.115.148.95
     database: 1
-    password: xPwKYBakY4hBShaC
+    password: neusoft600718
     port: 6379
     jedis:
       pool:
